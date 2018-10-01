@@ -8,7 +8,7 @@ This is another algorithm to [determine if a query point is inside a polygon](ht
 
 This repository features an implementation in Javascript using p5.js to draw the result and also a C++ implementation using SFML.
 
-The Javascript implementation can be tested [here](https://dozed12.github.io/area-point-inside/).
+The Javascript implementation can be tested [here](https://dozed12.github.io/Area-Point-Inside/).
 
 ### Description
 
@@ -25,7 +25,7 @@ Given the query point Q and the polygon P(concave or convex) the algorithm follo
 9. Calculate NA, the new area of P
 10. Compare A and NA and reach conclusions about point Q
 
-Although fairly extensive, it's quite easy to understand how it works visually. [Here](https://dozed12.github.io/area-point-inside/) is a live example of it working, querying the mouse cursor if it's inside or outside the polygon.
+Although fairly extensive, it's quite easy to understand how it works visually. [Here](https://dozed12.github.io/Area-Point-Inside/) is a live example of it working, querying the mouse cursor if it's inside or outside the polygon.
 
 The algorithm is composed of smaller more common problems such as: calculating the area of a polygon, checking for the intersection of 2 line segments and checking which side of a line a point is located. Most of these problems have linear complexity O(n) or lower, however to detect which vertices of P are visible to Q we require to do "checking for the intersection of 2 line segments" with quadratic complexity O(n x n) where n is the number of vertices of P. This is what causes the entire algorithm to have O(n x n) complexity. Unfortunatly as much as I researched there doesn't seem to be any better alternative to this. Perhaps if a better solution is found then this algorithm could be more useful but for now there isn't much reason to use it. Even if there's a way to reduce the complexity to O(n) the algorithm will still likely be slower than the other options considering it has many more complex operations to do.
 
