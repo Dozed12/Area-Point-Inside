@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\francisco moreira\desktop\sfml pointinside\sfml_project\main.cpp(29): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  SFML_Project.vcxproj -> C:\Users\Francisco Moreira\Desktop\SFML pointInside\Debug\AreaAlgorithm.exe
+  SFML_Project.vcxproj -> C:\Users\Francisco Moreira\Desktop\SFML pointInside\Debug\AreaAlgorithm.pdb (Partial PDB)
